@@ -1,0 +1,56 @@
+.popDown-form {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    background-color: #6d81e6bf;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    transition: .3s linear;
+}
+
+.popMenuButton {
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.popMenuButton:hover {
+    opacity: .8;
+}
+
+#customeMenuPopper {
+    display: none;
+}
+
+#customeMenuPopper:checked+.popDown-form {
+    top: 0;
+}
+
+.popDown-form>* {
+    margin: 5px;
+}
+
+.popDown-form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popDown-form select,
+input {
+    width: 100%;
+    height: 1cm;
+}
+
+.popDown-form--submit-btn {
+    height: 1cm;
+    width: 90%;
+    align-self: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #2645e3;
+}
+
+.popDown-form--submit-btn:active {
+    scale: .9;
+}

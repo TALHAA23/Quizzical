@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.home-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page--heading {
+    font-size: 50px;
+    margin: 0;
+    color: #4d5a9e;
+}
+
+
+.home-page--start-button,
+.quiz-form--submission--submit-btn,
+.quiz-form--submission--reset-btn {
+    width: 3cm;
+    height: 1cm;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #4d5a9e;
+    margin: 0 5px;
+}
+
+.quiz-form--submission--score {
+    font-weight: bold;
+    font-weight: 10px;
+    margin-right: 20px;
+}
+
+.home-page--start-button:active {
+    box-shadow: inset 4px 3px 5px #999292b0;
+}
+
+.quiz-form {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-container {
+    margin-top: 10px;
+    padding: 0 10%;
+}
+
+.quiz--question {
+    color: #4d5a9e;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.quiz--options {
+    display: grid;
+    grid-template: 1fr/ repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.quiz--options label {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.quiz--options input:checked+label {
+    border: none;
+    background-color: #4d5b9e4a;
+    color: #4a5bb5;
+    font-weight: bold;
+}
+
+.quiz--options label.was-correct {
+    background-color: #94d7a3;
+
+}
+
+#correct-answer {
+    background-color: #94d7a3;
+}
+
+#incorrect-answer {
+    background-color: #f67c84;
+}
+
+
+.quiz--options input[type="radio"] {
+    display: none;
+}
+
+.quiz-form--submission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* tablet screen */
+@media only screen and (max-width:650px) {
+    .quiz--options {
+        grid-template: auto auto/ auto auto;
+    }
+
+    .quiz-form--submission {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+}
+
+/* ultra small screen  */
+@media only screen and (max-width:350px) {
+    .quiz--options {
+        grid-template: repeat(4, 1fr)/auto;
+        grid-gap: 5px;
+    }
+}

@@ -1,0 +1,25 @@
+-About
+
+Quizzical as the name suggest is a simple quiz app which render so intresting question each time you udate browers or start new.
+
+-Feature
+.Use API for new and varity of question
+.Customize Quiz
+.Get quiz result
+.mark correct answers on result
+.responsive for all devices
+
+-Open trivia database 
+
+open trivia database is use as an API which allow us to reqest new question for free.
+visit there website using => https://opentdb.com/
+
+-Installation
+
+.downlaod file, unzip and open in an editor
+.install all packages using npm install
+.run using npm run dev
+
+-Contact
+
+email: talhasifat23@gmail.com
